@@ -1,0 +1,72 @@
+/* Reset default margins and paddings and apply box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Corrected double Arial */
+    line-height: 1.6; /* Set line height */
+    background-color: #f4f4f4; /* Note: This color code may not be valid (it should be six characters) */
+    color: #333; /* Text color */
+}
+
+header {
+    background-color: #333; /* Corrected 'colors' to 'color' */
+    color: white;
+    padding: 10px; /* Added padding value */
+    text-align: center; /* Center text in header */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between items */
+}
+
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+footer {
+    background-color: #333; /* Footer background color */
+    color: white; /* Footer text color */
+    text-align: center; /* Center text in footer */
+    padding: 10px 0; /* Added vertical padding */
+    position: fixed; /* Keep footer at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Position from bottom */
+}
+
+main {
+    padding: 20px; /* Padding for main content */
+    text-align: center; /* Center text in main content */
+}
+
+form {
+    margin-top: 20px; /* Space above the form */
+}
+
+form input, form textarea {
+    display: block; /* Block display for inputs */
+    width: 80%; /* Width for input fields */
+    margin: 10px auto; /* Center the inputs */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+@media (max-widht: 768px) {
+    nv ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    form input, form textarea{
+        widht: 100px
+    }
+}
